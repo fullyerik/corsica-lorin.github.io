@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav .menu {
+            display: flex;
+        }
+        nav .menu a {
+            color: #ffffff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .menu a:hover {
+            text-decoration: underline;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-right: 40px;
+        }
+        nav .logo img {
+            max-height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        header {
+            text-align: center;
+            padding: 6em 2em 2em;
+            background: url('Mega-Victoria-Corsica.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            padding: 2em;
+            background: #ffffff;
+            color: #000000;
+            margin: 2em auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container p {
+            margin-bottom: 1em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            font-size: 1em;
+            margin-top: auto;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const token = "CorsicaFerries911"; // Dein fester Token
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        if (!urlParams.has("token")) {
+            // Falls kein Token in der URL ist, füge ihn hinzu
+            window.location.href = window.location.pathname + "?token=" + token;
+        } else {
+            // Alle internen Links mit Token ergänzen
+            document.querySelectorAll("a").forEach(link => {
+                if (link.href.includes(window.location.hostname)) {
+                    let url = new URL(link.href);
+                    url.searchParams.set("token", urlParams.get("token"));
+                    link.href = url.toString();
+                }
+            });
+        }
+    });
+</script>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <a href="index.html">Startseite</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="faehigkeiten.html">Fähigkeiten</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="logo">
+            <img src="Erik_Spinnler_Foto.jpeg" alt="Logo">
+            <span>Erik Spinnler</span>
+        </div>
+    </nav>
+    <header>
+        <h1>Willkommen auf meiner Website</h1>
+    </header>
+    <div class="container section">
+        <p>Hallo, mein Name ist Lorin Neuenschwander und ich habe eine große Leidenschaft für Korsika! 🌴✨ <br>
+            Diese wunderschöne Mittelmeerinsel fasziniert mich mit ihren traumhaften Stränden, <br> atemberaubenden Bergen und der einzigartigen Kultur.
+            Auf dieser Seite teile ich meine Erlebnisse, <br> Tipps und Lieblingsorte auf Korsika – perfekt für alle, <br> die von einer unvergesslichen Reise träumen oder selbst diese Insel entdecken möchten.
+        </p>
+        <p>Viel Spaß beim Stöbern! 🏝️🚀</p>
+    </div>
+    <footer>
+        &copy; 2025 Erik Spinnler
+    </footer>
+</body>
+</html>

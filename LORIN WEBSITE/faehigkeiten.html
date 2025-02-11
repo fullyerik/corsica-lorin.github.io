@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fähigkeiten</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('https://cdn.pixabay.com/photo/2020/08/29/09/26/beach-5526592_1280.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-right: 20px;
+        }
+        nav .logo img {
+            max-height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        nav .menu {
+            display: flex;
+            justify-content: flex-start;
+        }
+        nav .menu a {
+            color: #ffffff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .menu a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 2em;
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
+            width: 80%;
+            border-radius: 10px;
+            margin-top: 5em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <a href="index.html">Startseite</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="faehigkeiten.html">Fähigkeiten</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="logo">
+            <img src="Erik_Spinnler_Foto.jpeg" alt="Logo">
+            <span>Erik Spinnler</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Fähigkeiten</h1>
+        <h3>Technische Fähigkeiten</h3>
+        <p>Ich bin gut in HTML und CSS und kann damit Webseiten erstellen. </br> Außerdem möchte ich Java und Python lernen, </br> um meine Fähigkeiten weiter zu verbessern.</p>
+        <h3>Soft Skills</h3>
+            <p>Teamarbeit: </br> Effektive Zusammenarbeit, </br> im Team.</p>
+            <p>Kreativität: </br> Entwicklung kreativer Lösungen, </br> für technische Probleme.</p>
+    </div>
+    <footer>
+        &copy; 2025 Erik Spinnler
+    </footer>
+</body>
+</html>
+
