@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Sozial</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background: url('https://cdn.pixabay.com/photo/2020/08/29/09/26/beach-5526592_1280.jpg') no-repeat center center fixed; 
-            background-size: cover;
-            color: #ffffff;
+            background: #ffffff;
+            color: #000000;
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
@@ -22,54 +21,98 @@
             align-items: center;
             background: rgba(0, 0, 0, 0.5);
             padding: 1em;
-            width: 100%;
             position: fixed;
             top: 0;
+            width: 100%;
+            z-index: 1000;
         }
-        .logo {
+        nav .menu {
+            display: flex;
+        }
+        nav .menu a {
+            color: #ffffff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .menu a:hover {
+            text-decoration: underline;
+        }
+        nav .logo {
             display: flex;
             align-items: center;
-            text-align: center;
-            margin-left: 20px; /* Abstand vom Rand vergrößert */
+            margin-left: auto;
+            padding-right: 40px;
         }
-        .logo img {
+        nav .logo img {
             max-height: 40px;
-            margin-right: 15px; /* Abstand zwischen Bild und Text vergrößert */
+            margin-right: 10px;
             border-radius: 50%;
         }
-        .logo span {
-            font-size: 1em; /* Größe des Texts verkleinert */
-            font-weight: bold;
-            color: white;
-        }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             text-align: center;
             padding: 2em;
-            background: rgba(255, 255, 255, 0.8);
-            color: #000;
+            background: #ffffff;
+            color: #000000;
+            margin: 8em auto 2em auto;
             width: 80%;
             border-radius: 10px;
-            margin: 8em auto 2em auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .container form {
-            width: 100%;
-            max-width: 600px;
+        .email {
+            margin-top: 30px;
+            font-size: 1.5em;
         }
-        .container input, 
-        .container textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 1em;
-            border: none;
-            border-radius: 5px;
+        .email a {
+            color: #333;
+            text-decoration: none;
         }
-        .container input[type="submit"] {
-            background-color: #000;
-            color: #fff;
-            cursor: pointer;
+        .email a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            font-size: 1em;
+            margin-top: auto;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        header {
+            text-align: center;
+            padding: 6em 2em 2em;
+            background: url('https://images.unsplash.com/photo-1523908189041-954a0fb27470?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-link {
+            text-align: center;
+        }
+        .social-link img {
+            width: 50px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .social-link span {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -78,34 +121,41 @@
         <div class="menu">
             <a href="index.html">Startseite</a>
             <a href="ueber-mich.html">Über mich</a>
-            <a href="projekte.html">Projekte</a>
+            <a href="projekte.html">Zeichnungen</a>
             <a href="faehigkeiten.html">Fähigkeiten</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="kontakt.html">Sozial</a>
         </div>
-        <div class="logo-container">
-            <div class="logo">
-                <img src="Erik_Spinnler_Foto.jpeg" alt="Logo">
-                <span>Erik Spinnler</span>
+        <div class="logo">
+            <img src="https://media-zrh1-1.cdn.whatsapp.net/v/t61.24694-24/457292965_1231500081394009_7728197577812856276_n.jpg?ccb=11-4&oh=01_Q5AaIBgYXFYmtUnXTB7r3pkBChoVc-4yQfo4R715RAQxo_oA&oe=67BAAD3F&_nc_sid=5e03e0&_nc_cat=111" alt="Logo">
+            <span>Erik Spinnler</span>
+        </div>
+    </nav> 
+    <div class="container">
+        <h1>Sozial</h1>
+        <div class="social-links">
+            <div class="social-link">
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1024px-TikTok_logo.svg.png" alt="TikTok Logo">
+                </a>
+                <span>TikTok</span>
+            </div>
+            <div class="social-link">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram Logo">
+                </a>
+                <span>Instagram</span>
+            </div>
+            <div class="social-link">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+                </a>
+                <span>YouTube</span>
             </div>
         </div>
-    </nav>    
+    </div>
     <div class="container">
-        <h1>Kontakt</h1>
-        <form action="/send_email" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" required></textarea>
-            <input type="submit" value="Absenden">
-        </form>
-        <p>E-Mail-Adresse: <a href="mailto:erik.spinnler12@icloud.com">erik.spinnler12@icloud.com</a></p>
-        <div class="socials">
-            Folge mir auf 
-            <a href="https://www.github.com/fullyerik">
-                <img src="github-logo.png" alt="GitHub Logo">
-            </a>
+        <div class="email">
+            Hier ist meine Email: <a href="mailto:test@gmail.com">test@gmail.com</a>
         </div>
     </div>
     <footer>
