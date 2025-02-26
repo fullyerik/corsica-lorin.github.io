@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background: url('Mega-Express.jpg') no-repeat center center fixed; 
-            background-size: cover;
-            color: #ffffff;
+            background: #ffffff;
+            color: #000000;
             font-family: Arial, sans-serif;
+            margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             min-height: 100vh;
-            margin: 0;
         }
         nav {
             display: flex;
@@ -24,24 +21,13 @@
             align-items: center;
             background: rgba(0, 0, 0, 0.5);
             padding: 1em;
-            width: 100%;
             position: fixed;
             top: 0;
-        }
-        nav .logo {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            padding-right: 20px; /* Abstand nach links hinzufügen */
-        }
-        nav .logo img {
-            max-height: 40px;
-            margin-right: 10px;
-            border-radius: 50%; /* Rundes Bild */
+            width: 100%;
+            z-index: 1000;
         }
         nav .menu {
             display: flex;
-            justify-content: flex-start;
         }
         nav .menu a {
             color: #ffffff;
@@ -52,34 +38,60 @@
         nav .menu a:hover {
             text-decoration: underline;
         }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-right: 40px;
+        }
+        nav .logo img {
+            max-height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        header {
+            text-align: center;
+            padding: 6em 2em 2em;
+            background: url('https://cdn.pixabay.com/photo/2025/02/13/10/24/ship-9403526_1280.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+        }
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             text-align: center;
             padding: 2em;
-            background: rgba(255, 255, 255, 0.8);
-            color: #000;
+            background: #ffffff;
+            color: #000000;
+            margin: 2em auto;
             width: 80%;
             border-radius: 10px;
-            margin-top: 5em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .container img {
-            max-width: 30%;
+            max-width: 30%; /* Verkleinert die Bilder */
             border-radius: 10px;
         }
         .container .text {
             flex: 1;
-            margin: 0 2em;
+            margin: 0 1em;
         }
         footer {
             text-align: center;
             padding: 1em;
             background: rgba(0, 0, 0, 0.5);
-            position: fixed;
-            width: 100%;
-            bottom: 0;
             color: #ffffff;
+            font-size: 1em;
+            margin-top: auto;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -88,17 +100,20 @@
         <div class="menu">
             <a href="index.html">Startseite</a>
             <a href="ueber-mich.html">Über mich</a>
-            <a href="projekte.html">Projekte</a>
+            <a href="projekte.html">Zeichnungen</a>
             <a href="faehigkeiten.html">Fähigkeiten</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
         <div class="logo">
-            <img src="Erik_Spinnler_Foto.jpeg" alt="Logo">
+            <img src="https://media-zrh1-1.cdn.whatsapp.net/v/t61.24694-24/457292965_1231500081394009_7728197577812856276_n.jpg?ccb=11-4&oh=01_Q5AaIBgYXFYmtUnXTB7r3pkBChoVc-4yQfo4R715RAQxo_oA&oe=67BAAD3F&_nc_sid=5e03e0&_nc_cat=111" alt="Logo">
             <span>Lorin Neuenschwander</span>
         </div>
     </nav>
+    <header>
+        <h1>Über mich</h1>
+    </header>
     <div class="container section">
-        <img src="Corsica-Marina-Seconda.jpg" alt="Bild links">
+        <img src="https://cdn.pixabay.com/photo/2025/02/13/10/24/sea-9403527_1280.jpg" alt="Bild links">
         <div class="text">
             <h2>Über mich</h2>
             <p>Hallo, ich bin Lorin Neuenschwander und liebe Korsika! 🌊🏝️ </br> 
@@ -110,7 +125,7 @@
                 Mein absoluter Lieblingszug ist der BLS RBDe 565 – eine Legende auf den Schienen.  </br>
                 Viel Spaß auf meiner Website! 🚢✨</p>
         </div>
-        <img src="BLS-RBDe-565.jpg" alt="Bild rechts">
+        <img src="https://cdn.pixabay.com/photo/2025/02/13/11/49/11-49-01-98_1280.jpg" alt="Bild rechts">
     </div>
     <footer>
         &copy; 2025 Lorin Neuenschwander
