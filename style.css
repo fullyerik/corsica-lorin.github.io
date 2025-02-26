@@ -41,12 +41,15 @@ nav a {
     align-items: center;
     text-align: center;
     margin-right: 25px;  /* Gleicher Abstand wie vorher */
+    color: white;
 }
 
-.logo img {
+nav .logo img {
     max-height: 40px;
+    width: 40px;
     margin-right: 10px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo span {
@@ -79,7 +82,7 @@ header h1 {
     background: white;
     margin: 2em 0;
     padding: 2em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 footer {
@@ -95,5 +98,32 @@ footer {
     margin-left: 5px;
 }
 
+/* Swiper Styles */
+.swiper {
+    width: 90vmin;    /* Größer wie A4-Querformat */
+    height: calc(90vmin / 1.414); /* Höhe im Verhältnis 297:210 */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    margin: 0 auto;
+}
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;  /* Größe bleibt unverändert */
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Zeigt das ganze Bild an */
+    border-radius: 10px;
+}
 
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+}
 
+.swiper-pagination-bullet {
+    background: #ffffff;
+}
